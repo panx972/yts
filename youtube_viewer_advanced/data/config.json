@@ -1,0 +1,11 @@
+{
+  "max_profiles": 10,
+  "view_duration_min": 30,
+  "view_duration_max": 180,
+  "use_fingerprinting": true,
+  "use_proxy_rotation": true,
+  "headless_mode": false,
+  "threads": 5,
+  "test_proxy_timeout": 15,
+  "max_proxies_to_fetch": 1000
+}
