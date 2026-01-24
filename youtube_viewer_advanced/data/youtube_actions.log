@@ -1,0 +1,119 @@
+2026-01-21 20:32:35,241 - INFO - Rozpoczynam organiczne wyszukiwanie kanału: https://www.youtube.com/@jbeegames
+2026-01-21 20:32:43,783 - INFO - Wykonano organiczne scrollowanie v1 (1 razy)
+2026-01-21 20:32:51,155 - INFO - Wyszukano: https://www.youtube.com/@jbeegames
+2026-01-21 20:32:54,982 - INFO - Wykonano organiczne scrollowanie v2 (2 małych skoków, łącznie 162px)
+2026-01-21 20:32:56,485 - WARNING - Nie udało się zastosować filtra kanałów: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=144.0.7559.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c0a5715
+	0x7ff65c0a5770
+	0x7ff65be5108d
+	0x7ff65be3c622
+	0x7ff65be6299b
+	0x7ff65bedd5e0
+	0x7ff65bef9772
+	0x7ff65be9cc28
+	0x7ff65be9db33
+	0x7ff65c38e9f0
+	0x7ff65c388ded
+	0x7ff65c3a969a
+	0x7ff65c0c11e5
+	0x7ff65c0c99cc
+	0x7ff65c0aebf4
+	0x7ff65c0aeda6
+	0x7ff65c094e87
+	0x7ffbfca9e8d7
+	0x7ffbfe78c53c
+
+2026-01-21 20:35:11,905 - INFO - Rozpoczynam organiczne wyszukiwanie kanału: https://www.youtube.com/@jbeegames
+2026-01-21 20:35:16,620 - INFO - Wykonano organiczne scrollowanie v1 (1 razy)
+2026-01-21 20:35:23,881 - INFO - Wyszukano: https://www.youtube.com/@jbeegames
+2026-01-21 20:35:26,884 - ERROR - Błąd podczas scrollowania v2: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=144.0.7559.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c0a5715
+	0x7ff65c0a5770
+	0x7ff65be5108d
+	0x7ff65be3c622
+	0x7ff65be6299b
+	0x7ff65bedd5e0
+	0x7ff65bef9772
+	0x7ff65be9cc28
+	0x7ff65be9db33
+	0x7ff65c38e9f0
+	0x7ff65c388ded
+	0x7ff65c3a969a
+	0x7ff65c0c11e5
+	0x7ff65c0c99cc
+	0x7ff65c0aebf4
+	0x7ff65c0aeda6
+	0x7ff65c094e87
+	0x7ffbfca9e8d7
+	0x7ffbfe78c53c
+
+2026-01-21 20:53:27,138 - INFO - Wyszukiwanie kanału: 'jbeegames' (z inputu: 'https://www.youtube.com/@jbeegames')
+2026-01-21 20:53:34,916 - INFO - Wykonano organiczne scrollowanie v1 (1 razy)
+2026-01-21 20:53:37,798 - INFO - Wpisuję wyszukiwanie: 'jbeegames'
+2026-01-21 20:53:40,240 - INFO - Wysłano wyszukiwanie: 'jbeegames'
+2026-01-21 20:53:45,076 - INFO - Wykonano organiczne scrollowanie v1 (1 razy)
+2026-01-21 20:53:46,422 - INFO - Szukam kanałów w ogólnych wynikach...
+2026-01-21 20:53:48,059 - INFO - Znaleziono 23 potencjalnych kanałów
+2026-01-21 20:53:48,073 - INFO - Znaleziono dopasowanie: jbee games
+@jbeegames•2560 abonnenten
+gameplay wal...
+2026-01-21 20:53:48,896 - INFO - Kliknięto w kanał
+2026-01-21 20:53:54,162 - INFO - ✅ Znaleziono Twój kanał: https://www.youtube.com/@jbeegames
+2026-01-21 20:53:56,566 - INFO - Wykonano organiczne scrollowanie v1 (1 razy)
+2026-01-21 20:54:02,465 - INFO - Wykonano organiczne scrollowanie v1 (2 razy)
+2026-01-21 20:54:04,510 - INFO - Wykonano organiczne scrollowanie v2 (3 małych skoków, łącznie 311px)
+2026-01-21 20:54:05,571 - INFO - Znaleziono 5 filmów z Twojego kanału
+2026-01-21 20:54:05,572 - INFO - Rozpoczynam oglądanie filmu z Twojego kanału: https://www.youtube.com/watch?v=VOtBhBCbTRU
+2026-01-21 20:54:12,338 - WARNING - To nie jest film z Twojego kanału! URL: https://www.youtube.com/watch?v=VOtBhBCbTRU
+2026-01-21 20:54:12,338 - INFO - Wyszukiwanie kanału: 'jbeegames' (z inputu: '@jbeegames')
+2026-01-21 20:54:18,223 - INFO - Wykonano organiczne scrollowanie v1 (1 razy)
+2026-01-21 20:54:21,634 - INFO - Wpisuję wyszukiwanie: 'jbeegames'
+2026-01-21 20:54:24,025 - INFO - Wysłano wyszukiwanie: 'jbeegames'
+2026-01-21 20:54:30,656 - INFO - Wykonano organiczne scrollowanie v1 (1 razy)
+2026-01-21 20:54:32,592 - INFO - Szukam kanałów w ogólnych wynikach...
+2026-01-21 20:54:34,268 - INFO - Znaleziono 23 potencjalnych kanałów
+2026-01-21 20:54:34,285 - INFO - Znaleziono dopasowanie: jbee games
+@jbeegames•2560 abonnenten
+gameplay wal...
+2026-01-21 20:54:34,996 - INFO - Kliknięto w kanał
+2026-01-21 20:54:40,546 - INFO - ✅ Znaleziono Twój kanał: https://www.youtube.com/@jbeegames
+2026-01-21 20:54:45,244 - INFO - Wykonano organiczne scrollowanie v1 (2 razy)
+2026-01-21 20:55:13,935 - INFO - Rozpoczynam oglądanie filmu z Twojego kanału: https://www.youtube.com/watch?v=KGMolxids2Y&pp=ygUJamJlZWdhbWVz
+2026-01-21 20:55:21,000 - WARNING - To nie jest film z Twojego kanału! URL: https://www.youtube.com/watch?v=KGMolxids2Y
+2026-01-21 20:55:21,000 - INFO - Wyszukiwanie kanału: 'jbeegames' (z inputu: '@jbeegames')
+2026-01-21 20:55:26,267 - INFO - Wpisuję wyszukiwanie: 'jbeegames'
+2026-01-21 20:55:28,995 - INFO - Wysłano wyszukiwanie: 'jbeegames'
+2026-01-21 20:55:34,012 - ERROR - Błąd podczas scrollowania v1: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=144.0.7559.60)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff65c0a5715
+	0x7ff65c0a5770
+	0x7ff65be5108d
+	0x7ff65be3c622
+	0x7ff65be6299b
+	0x7ff65bedd5e0
+	0x7ff65bef9772
+	0x7ff65be9cc28
+	0x7ff65be9db33
+	0x7ff65c38e9f0
+	0x7ff65c388ded
+	0x7ff65c3a969a
+	0x7ff65c0c11e5
+	0x7ff65c0c99cc
+	0x7ff65c0aebf4
+	0x7ff65c0aeda6
+	0x7ff65c094e87
+	0x7ffbfca9e8d7
+	0x7ffbfe78c53c
+
+2026-01-21 20:55:35,880 - INFO - Szukam kanałów w ogólnych wynikach...

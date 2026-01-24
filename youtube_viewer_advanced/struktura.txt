@@ -1,0 +1,27 @@
+youtube_viewer_advanced/
+├── main.py                          # Główny plik programu
+├── test_proxy_system.py             # Testowanie proxy (poprawiony)
+├── test_chromedriver.py
+├── __pycache__
+├── logs
+├── get_fresh_proxies.py
+├── config.py
+├── chromedriver.exe
+├── requirements.txt                 # Zależności
+├── data/                           # Dane
+│   ├── youtube_actions.log
+│   ├── working_proxy.txt
+│   ├── config.json
+│   ├── proxy.txt                   # Lista proxy
+│   ├── good_proxy.txt              # Działające proxy
+│   ├── channels.txt                # Lista kanałów
+│   └── videos.txt                  # Lista filmów
+├── modules/                        # Moduły
+│   ├── __init__.py                 # Eksport modułów
+│   ├── browser_manager.py          # Manager przeglądarek
+│   ├── proxy_manager.py           # Manager proxy
+│   ├── youtube_actions.py         # Akcje YouTube
+│   ├── channel_verifier.py        # Weryfikacja kanałów
+│   └── fingerprint_engine.py      # Fingerprinting (opcjonalnie)
+├── profiles/                       # Profile przeglądarek
+└── fingerprints/                   # Fingerprinty (opcjonalnie)

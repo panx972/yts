@@ -1,0 +1,63 @@
+{
+  "profile_id": 1,
+  "device_type": "windows_chrome",
+  "generated_at": "2026-01-21T20:32:19.631809",
+  "os": "Windows 10",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+  "platform": "Win32",
+  "screen": {
+    "width": 1536,
+    "height": 864,
+    "deviceScaleFactor": 1.25
+  },
+  "hardware_concurrency": 4,
+  "device_memory": 4,
+  "timezone": "Europe/Berlin",
+  "language": "en-GB, en",
+  "locale": "de-DE",
+  "webgl_vendor": "NVIDIA Corporation",
+  "webgl_renderer": "Intel(R) UHD Graphics 630",
+  "canvas_fingerprint": "8bd1d357cf593274",
+  "audio_fingerprint": "35c7017b6372",
+  "fonts": [
+    "Calibri",
+    "Times New Roman",
+    "Arial",
+    "Segoe UI",
+    "Verdana",
+    "Courier New",
+    "Consolas",
+    "Arial Black",
+    "Georgia",
+    "Cambria"
+  ],
+  "plugins": [
+    "Chrome PDF Viewer",
+    "Chrome PDF Plugin",
+    "Widevine Content Decryption Module",
+    "Native Client"
+  ],
+  "touch_support": false,
+  "do_not_track": null,
+  "cookie_enabled": true,
+  "webrtc": {
+    "ip_handling": "default",
+    "multiple_routes": true,
+    "proxy_only": true
+  },
+  "battery": null,
+  "connection": {
+    "type": "wifi",
+    "effective_type": "3g",
+    "downlink": 50.88645562453004,
+    "rtt": 197
+  },
+  "media_devices": {
+    "audio_input": 1,
+    "audio_output": 2,
+    "video_input": 1
+  },
+  "js_injection": "\n// === ANTIDETECT FINGERPRINT PROTECTION ===\n// Generated for profile: 1\n// Device: windows_chrome\n\n// 1. Ukryj automation flags\nObject.defineProperty(navigator, 'webdriver', {\n    get: () => undefined\n});\n\n// 2. Override userAgent i platform\nObject.defineProperty(navigator, 'userAgent', {\n    get: () => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'\n});\n\nObject.defineProperty(navigator, 'platform', {\n    get: () => 'Win32'\n});\n\n// 3. Override languages\nObject.defineProperty(navigator, 'languages', {\n    get: () => ['en-GB']\n});\n\n// 4. Hardware concurrency\nObject.defineProperty(navigator, 'hardwareConcurrency', {\n    get: () => 4\n});\n\n// 5. Device memory\nObject.defineProperty(navigator, 'deviceMemory', {\n    get: () => 4\n});\n\n// 6. Timezone spoofing\nconst originalDateToString = Date.prototype.toString;\nDate.prototype.toString = function() {\n    try {\n        return new Date(this.toLocaleString('en-US', { timeZone: 'Europe/Berlin' })).toString();\n    } catch (e) {\n        return originalDateToString.call(this);\n    }\n};\n\n// 7. Canvas fingerprint protection\nconst originalGetContext = HTMLCanvasElement.prototype.getContext;\nHTMLCanvasElement.prototype.getContext = function(type, attributes) {\n    const context = originalGetContext.call(this, type, attributes);\n    \n    if (type === '2d') {\n        // Override toDataURL\n        const originalToDataURL = context.toDataURL;\n        context.toDataURL = function(...args) {\n            // Zwr\u00f3\u0107 sp\u00f3jny hash dla tego profilu\n            try {\n                const canvas = document.createElement('canvas');\n                canvas.width = 100;\n                canvas.height = 50;\n                const ctx = canvas.getContext('2d');\n                if (ctx) {\n                    ctx.fillStyle = '#ffffff';\n                    ctx.fillRect(0, 0, 100, 50);\n                    ctx.fillStyle = '#000000';\n                    ctx.font = '12px Arial';\n                    ctx.fillText('FingerprintProtection', 10, 25);\n                }\n                return canvas.toDataURL();\n            } catch (e) {\n                return originalToDataURL.apply(this, args);\n            }\n        };\n        \n        // Override fillText z lekk\u0105 randomizacj\u0105\n        const originalFillText = context.fillText;\n        context.fillText = function(...args) {\n            // Dodaj mikro-zmiany\n            if (args.length >= 3 && typeof args[0] === 'string') {\n                args[0] = args[0] + ' ';\n            }\n            return originalFillText.apply(this, args);\n        };\n    }\n    \n    return context;\n};\n\n// 8. WebGL fingerprint protection\nif (typeof WebGLRenderingContext !== 'undefined') {\n    const originalGetParameter = WebGLRenderingContext.prototype.getParameter;\n    WebGLRenderingContext.prototype.getParameter = function(parameter) {\n        // Ukryj WebGL info\n        if (parameter === 37445) { // UNMASKED_VENDOR_WEBGL\n            return 'NVIDIA Corporation';\n        }\n        if (parameter === 37446) { // UNMASKED_RENDERER_WEBGL\n            return 'Intel(R) UHD Graphics 630';\n        }\n        return originalGetParameter.call(this, parameter);\n    };\n}\n\n// 9. Audio fingerprint protection\nif (window.AudioContext || window.webkitAudioContext) {\n    const AudioContextClass = window.AudioContext || window.webkitAudioContext;\n    const originalCreateOscillator = AudioContextClass.prototype.createOscillator;\n    AudioContextClass.prototype.createOscillator = function() {\n        const oscillator = originalCreateOscillator.call(this);\n        // Modyfikuj frequency\n        try {\n            oscillator.frequency.value = 440 + Math.random() * 10;\n        } catch (e) {}\n        return oscillator;\n    };\n}\n\n// 10. Font fingerprint protection\nObject.defineProperty(document, 'fonts', {\n    value: {\n        ready: Promise.resolve(),\n        status: 'loaded',\n        check: () => true,\n        add: () => {},\n        delete: () => {},\n        clear: () => {},\n        load: () => Promise.resolve()\n    }\n});\n\n// 11. Plugin fingerprint protection\nObject.defineProperty(navigator, 'plugins', {\n    get: () => {\n        const plugins = [];\n        const pluginList = [\"Chrome PDF Viewer\", \"Chrome PDF Plugin\", \"Widevine Content Decryption Module\", \"Native Client\"];\n        pluginList.forEach(plugin => {\n            plugins.push({\n                name: plugin,\n                description: plugin,\n                filename: 'internal-pdf-viewer'\n            });\n        });\n        return plugins;\n    }\n});\n\n// 12. Screen resolution spoofing\nObject.defineProperty(window.screen, 'width', {\n    get: () => 1536\n});\nObject.defineProperty(window.screen, 'height', {\n    get: () => 864\n});\nObject.defineProperty(window.screen, 'availWidth', {\n    get: () => 1436\n});\nObject.defineProperty(window.screen, 'availHeight', {\n    get: () => 764\n});\n\n// 13. WebRTC IP leak protection\nif (window.RTCPeerConnection) {\n    const originalRTCPeerConnection = window.RTCPeerConnection;\n    window.RTCPeerConnection = function(...args) {\n        const pc = new originalRTCPeerConnection(...args);\n        \n        // Override createDataChannel\n        const originalCreateDataChannel = pc.createDataChannel;\n        if (originalCreateDataChannel) {\n            pc.createDataChannel = function(...args) {\n                return originalCreateDataChannel.apply(this, args);\n            };\n        }\n        \n        return pc;\n    };\n}\n\n// 14. Console.log cleaner (usuwa debug info)\nconst originalLog = console.log;\nconsole.log = function(...args) {\n    // Filtruj selenium logs\n    const hasSeleniumLog = args.some(arg => \n        typeof arg === 'string' && \n        (arg.includes('chrome') || arg.includes('driver') || arg.includes('WebDriver'))\n    );\n    if (!hasSeleniumLog) {\n        originalLog.apply(console, args);\n    }\n};\n\n// 15. Notification permissions\nObject.defineProperty(Notification, 'permission', {\n    get: () => 'denied'\n});\n\nconsole.info('\u2705 Fingerprint protection loaded for windows_chrome');\n",
+  "accept_language": "de-DE,de;q=0.9,en-US;q=0.8,en;q=0.7",
+  "country": "DE"
+}
